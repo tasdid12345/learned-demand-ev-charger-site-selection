@@ -1,0 +1,102 @@
+Collecting numpy (from -r requirements.txt (line 1))
+  Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pandas (from -r requirements.txt (line 2))
+  Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting scipy (from -r requirements.txt (line 3))
+  Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting scikit-learn (from -r requirements.txt (line 4))
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting lightgbm (from -r requirements.txt (line 5))
+  Downloading lightgbm-4.7.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+Collecting matplotlib (from -r requirements.txt (line 6))
+  Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting joblib>=1.4.0 (from scikit-learn->-r requirements.txt (line 4))
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->-r requirements.txt (line 4))
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->-r requirements.txt (line 4))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 6))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->-r requirements.txt (line 6))
+  Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 6))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib->-r requirements.txt (line 6))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->-r requirements.txt (line 6))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn->-r requirements.txt (line 4))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 30.0 MB/s  0:00:00
+Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 58.9 MB/s  0:00:00
+Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 70.6 MB/s  0:00:00
+Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 72.2 MB/s  0:00:00
+Downloading lightgbm-4.7.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 75.2 MB/s  0:00:00
+Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 72.4 MB/s  0:00:00
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 87.4 MB/s  0:00:00
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 116.7 MB/s  0:00:00
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 83.2 MB/s  0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Installing collected packages: threadpoolctl, six, pyparsing, pillow, packaging, numpy, narwhals, kiwisolver, fonttools, cycler, cloudpickle, scipy, python-dateutil, joblib, contourpy, scikit-learn, pandas, matplotlib, lightgbm
+
+Successfully installed cloudpickle-3.1.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.66.1 joblib-1.6.0 kiwisolver-1.5.1 lightgbm-4.7.0 matplotlib-3.11.2 narwhals-2.27.1 numpy-2.4.6 packaging-26.3 pandas-3.0.6 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scikit-learn-1.9.1 scipy-1.17.1 six-1.17.0 threadpoolctl-3.7.0
+rows: 20640
+mean points covered per candidate: 367.726
+seed 42: base=0.6189 imp=0.6429 best={'num_leaves': 16, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.1}
+seed 43: base=0.6189 imp=0.6389 best={'num_leaves': 8, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.1}
+seed 44: base=0.6189 imp=0.6332 best={'num_leaves': 16, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.03}
+seed 45: base=0.6189 imp=0.6400 best={'num_leaves': 16, 'n_estimators': 100, 'min_child_samples': 10, 'learning_rate': 0.1}
+seed 46: base=0.6189 imp=0.6404 best={'num_leaves': 8, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.03}
+seed 47: base=0.6189 imp=0.6403 best={'num_leaves': 16, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.03}
+seed 48: base=0.6189 imp=0.6384 best={'num_leaves': 8, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.03}
+seed 49: base=0.6189 imp=0.6320 best={'num_leaves': 16, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.1}
+seed 50: base=0.6189 imp=0.6380 best={'num_leaves': 8, 'n_estimators': 100, 'min_child_samples': 10, 'learning_rate': 0.1}
+seed 51: base=0.6189 imp=0.6392 best={'num_leaves': 8, 'n_estimators': 300, 'min_child_samples': 10, 'learning_rate': 0.1}
+{
+  "baseline_score": 0.6189249331475316,
+  "improved_score": 0.6383228635469711,
+  "baseline_score_std": 0.0,
+  "improved_score_std": 0.0031546459118602884,
+  "baseline_jaccard_stability": 1.0,
+  "improved_jaccard_stability": 0.5862603268581171,
+  "baseline_demand_spearman": 0.4150898335426674,
+  "improved_demand_spearman": 0.976574249178201,
+  "improved_demand_r2": 0.9639411552902791,
+  "baseline_score_k20": 0.4701235573610244,
+  "improved_score_k20": 0.5101400025622883,
+  "baseline_jaccard_k20": 1.0,
+  "improved_jaccard_k20": 0.5255673858905575,
+  "baseline_score_k50": 0.7677263089340387,
+  "improved_score_k50": 0.766505724531654,
+  "baseline_jaccard_k50": 1.0,
+  "improved_jaccard_k50": 0.6469532678256767,
+  "improvement": 0.01939793039943949
+}
+done

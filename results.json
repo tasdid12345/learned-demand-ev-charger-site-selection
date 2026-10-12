@@ -1,0 +1,38 @@
+{
+  "question": "Can a facility-location model that uses a learned (gradient-boosting) demand estimate choose charging sites that cover more true EV demand, and stay more stable, than the same model using population as demand?",
+  "method": "Greedy maximal-coverage (k=20 and 50, fixed radius, fixed 3000 candidate block groups) on California Housing block groups with simulated hidden EV demand; baseline weights demand by population, improved by a LightGBM model fitted (CV-tuned) on a random 10% of block groups with noisy observed usage. Scored on true demand of 25% held-out block groups; 10 seeds.",
+  "dataset": {
+    "name": "California Housing (scikit-learn) with simulated EV demand",
+    "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html",
+    "n_rows": 20640,
+    "n_train": 15480,
+    "n_test": 5160,
+    "same_as_paper": false,
+    "baseline_is_papers_method": false
+  },
+  "metric_name": "share of true held-out demand covered (mean over k=20,50 and 10 seeds)",
+  "higher_is_better": true,
+  "baseline": "Greedy maximal-coverage facility location with population as demand weight.",
+  "improved": "Same greedy solver and candidates, but demand weight is a CV-tuned LightGBM prediction fitted on observed-usage block groups.",
+  "metrics": {
+    "baseline_score": 0.6189249331475316,
+    "improved_score": 0.6383228635469711,
+    "baseline_score_std": 0.0,
+    "improved_score_std": 0.0031546459118602884,
+    "baseline_jaccard_stability": 1.0,
+    "improved_jaccard_stability": 0.5862603268581171,
+    "baseline_demand_spearman": 0.4150898335426674,
+    "improved_demand_spearman": 0.976574249178201,
+    "improved_demand_r2": 0.9639411552902791,
+    "baseline_score_k20": 0.4701235573610244,
+    "improved_score_k20": 0.5101400025622883,
+    "baseline_jaccard_k20": 1.0,
+    "improved_jaccard_k20": 0.5255673858905575,
+    "baseline_score_k50": 0.7677263089340387,
+    "improved_score_k50": 0.766505724531654,
+    "baseline_jaccard_k50": 1.0,
+    "improved_jaccard_k50": 0.6469532678256767,
+    "improvement": 0.01939793039943949
+  },
+  "notes": "Demand is simulated, so conclusions concern this synthetic setting only. Scoring uses noise-free simulated demand on test block groups; the optimiser sees features of all block groups (never test labels). The 10% observed-usage rows are drawn per seed from the training part of one fixed 75/25 split; seeds 42-51 (10) are used rather than 3. Baseline uses no labels and fixed candidates, so it is identical across seeds (std 0, Jaccard 1 trivially); stability only varies for the learned model. Coverage radius is in approximate degrees (0.1 ~ 10 km). Greedy k=20 sites are the prefix of the k=50 solution."
+}
